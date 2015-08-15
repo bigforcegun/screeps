@@ -4,7 +4,7 @@ module.exports = function() {
     var spawnHelpers;
     this.harvester = require('harvester');
     spawnHelpers = require('spawn_helpers');
-    return spawnHelpers().initProrotypeHelpers();
+    return spawnHelpers().initPrototypeHelpers();
   };
   this.initConsoleHelper = function() {
     var console_helper;

@@ -1,4 +1,5 @@
 module.exports = ->
+
   createHarvesterCreep = (name) ->
     if typeof name == 'undefined'
       nameSuffix = _.size(Memory.creeps)
@@ -12,6 +13,10 @@ module.exports = ->
       group: 'default')
     newWorker
 
+  {
+  initPrototypeHelpers: ->
+    Spawn::createHarvesterCreep = createHarvesterCreep
+  }
 
 
 # ---

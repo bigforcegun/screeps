@@ -3,7 +3,7 @@ module.exports = ()->
   @initHelpers = ()->
     @harvester = require('harvester')
     spawnHelpers = require('spawn_helpers')
-    spawnHelpers().initProrotypeHelpers()
+    spawnHelpers().initPrototypeHelpers()
 
   @initConsoleHelper = ()->
     console_helper = require('helper')
