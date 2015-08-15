@@ -1,5 +1,7 @@
 `var targets`
-core = require('core')
+global.core = require('core')
+global._ = require('lodash');
+
 core().initHelpers()
 core().initConsoleHelper()
 core().initMainLoop()
